@@ -1,0 +1,101 @@
+@import "../../../assets/font/font.css";
+
+.content {
+  width: 576px;
+  height: 712px;
+
+  border-radius: 42px;
+
+  box-shadow: 9px 9px 7.5px #8bb1cb, -9px -9px 7.5px #fff;
+
+  // background-color: #F6F9FB;
+
+  // position: relative;
+
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "psycho";
+
+    padding: 20px 0 20px 45px;
+
+    // position: absolute;
+    // left: 0;
+    // right: 0;
+    // top: 0;
+    // background-color: #F6F9FB;
+  }
+
+  .list_area {
+    // padding: 35px 0;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+
+    margin-top: 26px;
+
+    height: 565px;
+    overflow-x: scroll;
+    // box-sizing: border-box;
+
+    .holder_tip {
+      padding: 0 20px;
+      font-size: 20px;
+    }
+
+    .list_item {
+      width: 530px;
+      height: 46px;
+
+      margin: 0 auto 19px auto;
+      // padding: 0 20px;
+      // box-sizing: border-box;
+      border-radius: 22px;
+      background-color: #e9f3fc;
+      box-shadow: 1.5px 1.5px 3px #8bb1cb, -1.5px -1.5px 3px #fff;
+
+      display: flex;
+      align-items: center;
+
+      .list_content {
+        font-size: 20px;
+        // font-weight: normal;
+
+        overflow: hidden;
+        text-overflow: ellipsis; //显示省略号
+        display: -webkit-box;
+        -webkit-line-clamp: 1; //块元素显示的文本行数
+        -webkit-box-orient: vertical;
+      }
+
+      img {
+        margin: 0 30px;
+        width: 30px;
+        height: 30px;
+        transition: all 0.6s;
+      }
+
+      img:hover {
+        transform: rotate(-360deg);
+      }
+
+      .list_content {
+        width: 100%;
+      }
+
+      .grey_content {
+        text-decoration: line-through;
+        color: #7a7a7a;
+      }
+    }
+  }
+
+  .list_area::-webkit-scrollbar {
+    width: 0 !important;
+  }
+
+  .list_area::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0;
+  }
+}

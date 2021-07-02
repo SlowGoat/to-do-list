@@ -1,0 +1,46 @@
+@import "../../../assets/font/font.css";
+
+.input_box {
+  width: 1298px;
+  height: 56px;
+
+  border-radius: 42px;
+
+  box-shadow: 9px 9px 7.5px #8bb1cb, -9px -9px 7.5px #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .module_name {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: "psycho";
+  }
+
+  input {
+    width: 720px;
+    height: 32px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-color: #e9f3fc;
+    border: none;
+    margin: 0 50px 0 50px;
+    font-size: 20px;
+
+    box-shadow: rgb(139 177 203) 1.5px 1.5px 3px, rgb(255 255 255) -1.5px -1.5px 3px;
+
+
+  }
+
+  input:focus {
+    outline: none;
+    // border: 1px solid #fff;
+  }
+
+  .module_icon {
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
